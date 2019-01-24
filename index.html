@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+
+    <title>Válidação de campos e estilização com Jquery</title>
+</head>
+
+<body class="container">
+    <h1 class="display-4">Válidação de campos e estilização com Jquery</h1>
+    <form action="action.php" method="post">
+        <div class="form-group">
+            <label for="nome">Nome</label>
+            <input type="text" class="form-control form-control-lg" name="nome" id="nome" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control form-control-lg" name="email" id="email" autocomplete="off" required>
+        </div>
+        <div class="form-group-custom">
+            <label for="senha">Senha</label>
+            <input type="password" class="form-control form-control-lg" name="senha" id="senha" autocomplete="off" required>
+            <div id="forca" class="my-3">Força: </div>
+            <div class="form-check mb-3">
+                <input type="checkbox" name="view" id="view" class="form-check-input"> Mostrar senha
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="celular">Celular</label>
+            <input type="text" class="form-control form-control-lg" name="celular" id="celular" required>
+        </div>
+        <div class="form-group">
+            <label for="cep">CEP</label>
+            <input type="text" class="form-control form-control-lg" name="cep" id="cep" required>
+        </div>
+        <div class="form-group">
+            <label for="date">Data de Nascimento</label>
+            <input type="text" class="form-control form-control-lg" name="date" id="date" placeholder="dd/mm/AAAA" required>
+        </div>
+        <div class="form-group">
+            <label for="rg">RG</label>
+            <input type="text" class="form-control form-control-lg" name="rg" id="rg" required>
+        </div>
+        <div class="form-group">
+            <label for="cpf">CPF</label>
+            <input type="text" class="form-control form-control-lg" name="cpf" id="cpf" required>
+        </div>
+        <div class="form-group">
+            <label for="cnpj">CNPJ</label>
+            <input type="text" class="form-control form-control-lg" name="cnpj" id="cnpj" required>
+        </div>
+        <button class="btn btn-lg btn-primary" type="submit">Enviar</button>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script src="js/jquery.mask.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
